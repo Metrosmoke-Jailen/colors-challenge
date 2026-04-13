@@ -7,10 +7,15 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Reflection
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Prompts Used:
+1. How do I structure a React color guessing game with state for target color, score, and locked guesses?
+2. How can I highlight the correct swatch after a wrong guess in React?
+3. Can you improve the CSS to make the swatches feel more interactive and modern?
 
-## Expanding the ESLint configuration
+How AI helped me:
+I used AI as a pair programming assistant to help with debugging state flow in React when trying to lock guesses and reset rounds, improving UI feedback for correct vs incorrect swatch highlights, and upgrading CSS for visual hierarchy.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+What I figured out myself:
+I personally designed the game flow logic which includes when to lock the game after a guess, how score should increment only on correct answers, and how to structure the reset so each round feels independent and clean.
